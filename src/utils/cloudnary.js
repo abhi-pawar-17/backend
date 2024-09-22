@@ -23,12 +23,11 @@ import fs from "fs"
             fs.unlinkSync(localFilePath) //remove the locally save temp file as the upload operation got failed
             return null;
         }
+
     } 
 
 
     
-      cloudinary.v2.uploader.upload('https://res.cloudinary.com/demo/image/upload/getting-started/shoes.jpg', 
-        {public_id: 'shoes'},
-        function(error,result){console.log(result); });
+    export {uploadOnCloudinary}
      
  
